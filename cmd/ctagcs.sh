@@ -5,4 +5,4 @@ echo $currentPath
 find . -name "*.h" -o -name "*.c" -o -name "*.asm" -o -name "*.dts" > cscope.files
 cscope -bkq -i cscope.files
 
-ctags -R --c++-kinds=+p --fields=+iaS --extra=+q
+ctags -R --c++-kinds=+p --fields=+iaS --extras=+q
