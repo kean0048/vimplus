@@ -342,7 +342,7 @@ function install_prepare_software_on_ubuntu_like()
 {
     sudo apt-get update
     sudo apt-get install -y cmake build-essential python python-dev python3-dev fontconfig libfile-next-perl ack-grep git
-    sudo apt-get install -y universal-ctags || sudo apt-get install -y exuberant-ctags
+    sudo apt-get install -y universal-ctags || sudo apt-get install -y exuberant-ctags cscope
     compile_vim_on_ubuntu
 }
 
@@ -447,6 +447,13 @@ function copy_files()
 
     rm -rf ~/.vim/autoload
     ln -s ${PWD}/autoload ~/.vim
+    
+    if [ ! -f ${PWD}/cmd/ctagcs.sh ];
+    then
+    	echo "missing ctagcs file ...."
+    else
+    	sudo cp -f ${PWD}/cmd/ctagcs.sh /usr/bin/ctagcs
+    fi
 }
 
 # 安装mac平台字体
