@@ -16,3 +16,8 @@
 
 " 卸载/禁用~/.vimrc里的默认插件
 " UnPlug 'chxuan/prepare-code'
+
+" 显示vim文档哪些行被修改的插件
+Plug 'chrisbra/changesPlugin'
+" 在vim中查看相关函数等的man手册，支持水平窗口和垂直窗口打开
+Plug 'vim-utils/vim-man'
