@@ -186,7 +186,7 @@ function compile_vim_on_ubuntu()
 {
     sudo apt-get install -y libncurses5-dev libncurses5 libgnome2-dev libgnomeui-dev \
         libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-        libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 lua5.1-dev
+        libcairo2-dev libx11-dev libxpm-dev libxt-dev python2-dev python3-dev ruby-dev lua5.1 lua5.1-dev
 
     rm -rf ~/vim82
     git clone https://gitee.com/chxuan/vim82.git ~/vim82
@@ -208,7 +208,7 @@ function compile_vim_on_ubuntu()
 # 在debian上源代码安装vim
 function compile_vim_on_debian()
 {
-    sudo apt-get install -y libncurses5-dev libncurses5 libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 lua5.1-dev
+    sudo apt-get install -y libncurses5-dev libncurses5 libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python2-dev python3-dev ruby-dev lua5.1 lua5.1-dev
 
     rm -rf ~/vim82
     git clone https://gitee.com/chxuan/vim82.git ~/vim82
@@ -230,7 +230,7 @@ function compile_vim_on_debian()
 # 在parrot上源代码安装vim
 function compile_vim_on_parrot()
 {
-    sudo apt-get install -y libncurses5-dev libncurses5 libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 vim
+    sudo apt-get install -y libncurses5-dev libncurses5 libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python2-dev python3-dev ruby-dev lua5.1 vim
 
     rm -rf ~/vim82
     git clone https://gitee.com/chxuan/vim82.git ~/vim82
